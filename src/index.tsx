@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import LoginPage from './pages/Login/LoginPage';
+import { app } from './firebase/firebaseConfig';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './routes/MyRoutes';
+import MyRoutes from './routes/MyRoutes';
+const firebaseApp = app;
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <MyRoutes/>,
   document.getElementById('root')
 );
 
